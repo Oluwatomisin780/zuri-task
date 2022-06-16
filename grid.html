@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Task</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .grid{
+            border: 1px solid white;
+            background: #272643;
+            border-style: none;
+            max-width: 800px;
+            height: 400px;
+            margin: 12rem;
+        }
+        
+      .container {
+        display: grid;
+        grid-template-columns: 100px 600px;
+      grid-template-rows:60px;
+        grid-column-gap: 120px;
+        padding:10px 10px 20px 50px;
+      }
+      .box-one{
+        border: 1px solid white;
+        background: red;
+        border-style: none;
+        width: 200px;
+        height: 50px;
+      }
+      .box-two{
+        border: 1px solid white;
+        background: orange;
+        border-style: none;
+        width: 50px;
+        height:100px;
+
+      }
+      .box-three{
+        border: 1px solid white;
+        background: green;
+        border-style: none;
+        max-width: 100px;
+        height: 50px;
+        padding-top:40px;
+        padding-bottom:20px;
+        padding-left:30px;
+      }
+      .box-four{
+        margin-top: 50px;
+          display: grid;
+          gap: 10px;
+      }
+      .box-six{
+        border: 1px solid white;
+        background: steelblue;
+        border-style: none;
+        max-width: 100px;
+        height: 50px;
+        
+      }
+
+      .box-eight{
+        border: 1px solid white;
+        background: steelblue;
+        border-style: none;
+        max-width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="container">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+        <div class="box-four">
+        <div class="box-six">6</div>
+        <div class="box-eight">8</div>
+      </div>
+    </div>
+  </body>
+</html>
